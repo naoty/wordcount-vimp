@@ -19,7 +19,7 @@ var INFO = xml`
 </plugin>`;
 
 (function () {
-    var name = ["wc", "wordcount"];
+    var names = ["wc", "wordcount"];
     var desc = "Count selected texts";
     var command = function (args) {
         count = content.window.getSelection().toString().length;
