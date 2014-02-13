@@ -22,6 +22,8 @@ var INFO = xml`
     var name = ["wc", "wordcount"];
     var desc = "Count selected texts";
     var command = function (args) {
+        count = content.window.getSelection().toString().length;
+        liberator.echo(count);
     };
 
     commands.addUserCommand(names, desc, command);
